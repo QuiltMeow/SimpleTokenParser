@@ -1,0 +1,2162 @@
+  ScintillaNET.x64.SciLexer.dll.gz - Embedded, ContainedInManifestFile, 
+  ScintillaNET.x86.SciLexer.dll.gz - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ScintillaNET, Version=3.6.*, Culture=不因語言而異 (不因國別而異): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Struct ScintillaNET.Annotation: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Annotation Hidden = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Annotation Standard = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.Annotation Boxed = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.Annotation Indented = 3 : Public, Static, Literal, HasDefault
+Class ScintillaNET.AutoCSelectionEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, Int32, IntPtr, Int32, ScintillaNET.ListCompletionMethod): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Char 'get set' : 
+    ScintillaNET.ListCompletionMethod ListCompletionMethod 'get set' : 
+    Int32 Position 'get ' : 
+    System.String Text 'get ' : 
+  Methods:
+    get_Char(): PrivateScope, Public, HideBySig, SpecialName
+    get_ListCompletionMethod(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.AutomaticFold: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.AutomaticFold None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.AutomaticFold Show = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.AutomaticFold Click = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.AutomaticFold Change = 4 : Public, Static, Literal, HasDefault
+Class ScintillaNET.BeforeModificationEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, ScintillaNET.ModificationSource, Int32, Int32, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Position 'get ' : 
+    ScintillaNET.ModificationSource Source 'get set' : 
+    System.String Text 'get ' : 
+  Methods:
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_Source(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Struct ScintillaNET.CaretStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.CaretStyle Invisible = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.CaretStyle Line = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.CaretStyle Block = 2 : Public, Static, Literal, HasDefault
+Class ScintillaNET.ChangeAnnotationEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Line 'get set' : 
+  Methods:
+    get_Line(): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.CharAddedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Char 'get set' : 
+  Methods:
+    get_Char(): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.Command: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Command Default = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Null = 2172 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineDown = 2300 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineDownExtend = 2301 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineDownRectExtend = 2426 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineScrollDown = 2342 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineUp = 2302 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineUpExtend = 2303 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineUpRectExtend = 2427 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineScrollUp = 2343 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ParaDown = 2413 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ParaDownExtend = 2414 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ParaUp = 2415 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ParaUpExtend = 2416 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command CharLeft = 2304 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command CharLeftExtend = 2305 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command CharLeftRectExtend = 2428 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command CharRight = 2306 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command CharRightExtend = 2307 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command CharRightRectExtend = 2429 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordLeft = 2308 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordLeftExtend = 2309 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordRight = 2310 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordRightExtend = 2311 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordLeftEnd = 2439 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordLeftEndExtend = 2440 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordRightEnd = 2441 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordRightEndExtend = 2442 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordPartLeft = 2390 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordPartLeftExtend = 2391 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordPartRight = 2392 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command WordPartRightExtend = 2393 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Home = 2312 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command HomeExtend = 2313 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command HomeRectExtend = 2430 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command HomeDisplay = 2345 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command HomeDisplayExtend = 2346 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command HomeWrap = 2349 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command HomeWrapExtend = 2450 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VcHome = 2331 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VcHomeExtend = 2332 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VcHomeRectExtend = 2431 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VcHomeWrap = 2453 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VcHomeWrapExtend = 2454 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VcHomeDisplay = 2652 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VcHomeDisplayExtend = 2653 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineEnd = 2314 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineEndExtend = 2315 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineEndRectExtend = 2432 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineEndDisplay = 2347 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineEndDisplayExtend = 2348 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineEndWrap = 2451 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineEndWrapExtend = 2452 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DocumentStart = 2316 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DocumentStartExtend = 2317 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DocumentEnd = 2318 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DocumentEndExtend = 2319 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command PageUp = 2320 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command PageUpExtend = 2321 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command PageUpRectExtend = 2433 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command PageDown = 2322 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command PageDownExtend = 2323 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command PageDownRectExtend = 2434 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command StutteredPageUp = 2435 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command StutteredPageUpExtend = 2436 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command StutteredPageDown = 2437 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command StutteredPageDownExtend = 2438 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DeleteBack = 2326 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DeleteBackNotLine = 2344 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DelWordLeft = 2335 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DelWordRight = 2336 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DelWordRightEnd = 2518 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DelLineLeft = 2395 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command DelLineRight = 2396 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineDelete = 2338 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineCut = 2337 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineCopy = 2455 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineTranspose = 2339 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command LineDuplicate = 2404 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Lowercase = 2340 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Uppercase = 2341 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Cancel = 2325 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command EditToggleOvertype = 2324 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command NewLine = 2329 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command FormFeed = 2330 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Tab = 2327 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command BackTab = 2328 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command SelectionDuplicate = 2469 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command VerticalCenterCaret = 2619 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command MoveSelectedLinesUp = 2620 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command MoveSelectedLinesDown = 2621 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ScrollToStart = 2628 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ScrollToEnd = 2629 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ZoomIn = 2333 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command ZoomOut = 2334 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Undo = 2176 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command Redo = 2011 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command SwapMainAnchorCaret = 2607 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command RotateSelection = 2606 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command MultipleSelectAddNext = 2688 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command MultipleSelectAddEach = 2689 : Public, Static, Literal, HasDefault
+    ScintillaNET.Command SelectAll = 2013 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.CopyFormat: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.CopyFormat Text = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.CopyFormat Rtf = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.CopyFormat Html = 4 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.Document: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    ScintillaNET.Document Empty : Public, Static, InitOnly
+  Methods:
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(Document, Document): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Document, Document): PrivateScope, Public, Static, HideBySig, SpecialName
+Class ScintillaNET.DoubleClickEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, System.Windows.Forms.Keys, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Line 'get set' : 
+    System.Windows.Forms.Keys Modifiers 'get set' : 
+    Int32 Position 'get ' : 
+  Methods:
+    get_Line(): PrivateScope, Public, HideBySig, SpecialName
+    get_Modifiers(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.DwellEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Position 'get ' : 
+    Int32 X    'get set' : 
+    Int32 Y    'get set' : 
+  Methods:
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.EdgeMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.EdgeMode None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.EdgeMode Line = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.EdgeMode Background = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.EdgeMode MultiLine = 3 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.Eol: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Eol CrLf = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Eol Cr = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.Eol Lf = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.FoldAction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.FoldAction Contract = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldAction Expand = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldAction Toggle = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.FoldDisplayText: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.FoldDisplayText Hidden = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldDisplayText Standard = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldDisplayText Boxed = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.FoldFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.FoldFlags LineBeforeExpanded = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldFlags LineBeforeContracted = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldFlags LineAfterExpanded = 8 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldFlags LineAfterContracted = 16 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldFlags LevelNumbers = 64 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldFlags LineState = 128 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.FoldLevelFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.FoldLevelFlags White = 4096 : Public, Static, Literal, HasDefault
+    ScintillaNET.FoldLevelFlags Header = 8192 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.FontQuality: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.FontQuality Default = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.FontQuality NonAntiAliased = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.FontQuality AntiAliased = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.FontQuality LcdOptimized = 3 : Public, Static, Literal, HasDefault
+Class ScintillaNET.HotspotClickEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, System.Windows.Forms.Keys, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Keys Modifiers 'get set' : 
+    Int32 Position 'get ' : 
+  Methods:
+    get_Modifiers(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.IdleStyling: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.IdleStyling None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.IdleStyling ToVisible = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.IdleStyling AfterVisible = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.IdleStyling All = 3 : Public, Static, Literal, HasDefault
+Interface ScintillaNET.ILoader: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    AddData(Char[], Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ConvertToDocument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Release(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct ScintillaNET.IndentView: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.IndentView None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndentView Real = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndentView LookForward = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndentView LookBoth = 3 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Indicator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 ValueBit = 16777216 : Public, Static, Literal, HasDefault
+    Int32 ValueMask = 16777215 : Public, Static, Literal, HasDefault
+  Properties:
+    Int32 Alpha 'get set' : 
+    ScintillaNET.IndicatorFlags Flags 'get set' : 
+    System.Drawing.Color ForeColor 'get set' : 
+    System.Drawing.Color HoverForeColor 'get set' : 
+    ScintillaNET.IndicatorStyle HoverStyle 'get set' : 
+    Int32 Index 'get set' : 
+    Int32 OutlineAlpha 'get set' : 
+    ScintillaNET.IndicatorStyle Style 'get set' : 
+    Boolean Under 'get set' : 
+  Methods:
+    End(Int32): PrivateScope, Public, HideBySig
+    Start(Int32): PrivateScope, Public, HideBySig
+    ValueAt(Int32): PrivateScope, Public, HideBySig
+    get_Alpha(): PrivateScope, Public, HideBySig, SpecialName
+    set_Alpha(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Flags(): PrivateScope, Public, HideBySig, SpecialName
+    set_Flags(IndicatorFlags): PrivateScope, Public, HideBySig, SpecialName
+    get_ForeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ForeColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_HoverForeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_HoverForeColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_HoverStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_HoverStyle(IndicatorStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_OutlineAlpha(): PrivateScope, Public, HideBySig, SpecialName
+    set_OutlineAlpha(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Style(): PrivateScope, Public, HideBySig, SpecialName
+    set_Style(IndicatorStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_Under(): PrivateScope, Public, HideBySig, SpecialName
+    set_Under(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.IndicatorReleaseEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Position 'get ' : 
+  Methods:
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.IndicatorClickEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScintillaNET.IndicatorReleaseEventArgs
+    Void .ctor(ScintillaNET.Scintilla, System.Windows.Forms.Keys, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Keys Modifiers 'get set' : 
+  Methods:
+    get_Modifiers(): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.IndicatorCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[ScintillaNET.Indicator]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ScintillaNET.Indicator Item [Int32] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.IndicatorFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.IndicatorFlags None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorFlags ValueFore = 1 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.IndicatorStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.IndicatorStyle Plain = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Squiggle = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle TT = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Diagonal = 3 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Strike = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Hidden = 5 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Box = 6 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle RoundBox = 7 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle StraightBox = 8 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Dash = 9 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Dots = 10 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle SquiggleLow = 11 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle DotBox = 12 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle CompositionThick = 14 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle CompositionThin = 15 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle FullBox = 16 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle TextFore = 17 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle Point = 18 : Public, Static, Literal, HasDefault
+    ScintillaNET.IndicatorStyle PointCharacter = 19 : Public, Static, Literal, HasDefault
+Class ScintillaNET.InsertCheckEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, Int32, Int32, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Position 'get ' : 
+    System.String Text 'get set' : 
+  Methods:
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.Lexer: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Lexer Container = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Null = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Ada = 20 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Asm = 34 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Batch = 12 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Cpp = 3 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Css = 38 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Fortran = 36 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer FreeBasic = 75 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Html = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Json = 120 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Lisp = 21 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Lua = 15 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Pascal = 18 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Perl = 6 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer PhpScript = 69 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer PowerShell = 88 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Properties = 9 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer PureBasic = 67 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Python = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Ruby = 22 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Smalltalk = 72 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Sql = 7 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Vb = 8 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer VbScript = 28 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Verilog = 56 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Xml = 5 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer BlitzBasic = 66 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer Markdown = 98 : Public, Static, Literal, HasDefault
+    ScintillaNET.Lexer R = 86 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Line: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 AnnotationLines 'get ' : 
+    Int32 AnnotationStyle 'get set' : 
+    Byte[] AnnotationStyles 'get set' : 
+    System.String AnnotationText 'get set' : 
+    Int32 ContractedFoldNext 'get ' : 
+    Int32 DisplayIndex 'get ' : 
+    Int32 EndPosition 'get ' : 
+    Boolean Expanded 'get set' : 
+    Int32 FoldLevel 'get set' : 
+    ScintillaNET.FoldLevelFlags FoldLevelFlags 'get set' : 
+    Int32 FoldParent 'get ' : 
+    Int32 Height 'get ' : 
+    Int32 Index 'get set' : 
+    Int32 Length 'get ' : 
+    Int32 MarginStyle 'get set' : 
+    Byte[] MarginStyles 'get set' : 
+    System.String MarginText 'get set' : 
+    Int32 Position 'get ' : 
+    System.String Text 'get ' : 
+    Int32 Indentation 'get set' : 
+    Boolean Visible 'get ' : 
+    Int32 WrapCount 'get ' : 
+  Methods:
+    EnsureVisible(): PrivateScope, Public, HideBySig
+    FoldChildren(FoldAction): PrivateScope, Public, HideBySig
+    FoldLine(FoldAction): PrivateScope, Public, HideBySig
+    GetLastChild(Int32): PrivateScope, Public, HideBySig
+    Goto(): PrivateScope, Public, HideBySig
+    MarkerAdd(Int32): PrivateScope, Public, HideBySig
+    MarkerAddSet(UInt32): PrivateScope, Public, HideBySig
+    MarkerDelete(Int32): PrivateScope, Public, HideBySig
+    MarkerGet(): PrivateScope, Public, HideBySig
+    MarkerNext(UInt32): PrivateScope, Public, HideBySig
+    MarkerPrevious(UInt32): PrivateScope, Public, HideBySig
+    ToggleFold(): PrivateScope, Public, HideBySig
+    ToggleFoldShowText(String): PrivateScope, Public, HideBySig
+    get_AnnotationLines(): PrivateScope, Public, HideBySig, SpecialName
+    get_AnnotationStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnnotationStyle(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_AnnotationStyles(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnnotationStyles(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_AnnotationText(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnnotationText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ContractedFoldNext(): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_EndPosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_Expanded(): PrivateScope, Public, HideBySig, SpecialName
+    set_Expanded(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_FoldLevel(): PrivateScope, Public, HideBySig, SpecialName
+    set_FoldLevel(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_FoldLevelFlags(): PrivateScope, Public, HideBySig, SpecialName
+    set_FoldLevelFlags(FoldLevelFlags): PrivateScope, Public, HideBySig, SpecialName
+    get_FoldParent(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    get_MarginStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_MarginStyle(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MarginStyles(): PrivateScope, Public, HideBySig, SpecialName
+    set_MarginStyles(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_MarginText(): PrivateScope, Public, HideBySig, SpecialName
+    set_MarginText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    get_Indentation(): PrivateScope, Public, HideBySig, SpecialName
+    set_Indentation(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    get_WrapCount(): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.LineCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[ScintillaNET.Line]
+    System.Collections.IEnumerable
+  Properties:
+    Boolean AllLinesVisible 'get ' : 
+    Int32 Count 'get ' : 
+    ScintillaNET.Line Item [Int32] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AllLinesVisible(): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.LineEndType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.LineEndType Default = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.LineEndType Unicode = 1 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.ListCompletionMethod: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.ListCompletionMethod FillUp = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.ListCompletionMethod DoubleClick = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.ListCompletionMethod Tab = 3 : Public, Static, Literal, HasDefault
+    ScintillaNET.ListCompletionMethod NewLine = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.ListCompletionMethod Command = 5 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Margin: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Color BackColor 'get set' : 
+    ScintillaNET.MarginCursor Cursor 'get set' : 
+    Int32 Index 'get set' : 
+    Boolean Sensitive 'get set' : 
+    ScintillaNET.MarginType Type 'get set' : 
+    Int32 Width 'get set' : 
+    UInt32 Mask 'get set' : 
+  Methods:
+    get_BackColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Cursor(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cursor(MarginCursor): PrivateScope, Public, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Sensitive(): PrivateScope, Public, HideBySig, SpecialName
+    set_Sensitive(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    set_Type(MarginType): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Mask(): PrivateScope, Public, HideBySig, SpecialName
+    set_Mask(UInt32): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.MarginClickEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, System.Windows.Forms.Keys, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Margin 'get set' : 
+    System.Windows.Forms.Keys Modifiers 'get set' : 
+    Int32 Position 'get ' : 
+  Methods:
+    get_Margin(): PrivateScope, Public, HideBySig, SpecialName
+    get_Modifiers(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.MarginCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[ScintillaNET.Margin]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Capacity 'get set' : 
+    Int32 Count 'get ' : 
+    Int32 Left 'get set' : 
+    Int32 Right 'get set' : 
+    ScintillaNET.Margin Item [Int32] 'get ' : 
+  Methods:
+    ClearAllText(): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Capacity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Capacity(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    set_Left(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    set_Right(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.MarginCursor: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.MarginCursor Arrow = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginCursor ReverseArrow = 7 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.MarginOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.MarginOptions None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginOptions SublineSelect = 1 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.MarginType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.MarginType Symbol = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginType Number = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginType BackColor = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginType ForeColor = 3 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginType Text = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginType RightText = 5 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarginType Color = 6 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Marker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 MaskAll = 4294967295 : Public, Static, Literal, HasDefault
+    UInt32 MaskFolders = 4261412864 : Public, Static, Literal, HasDefault
+    Int32 FolderEnd = 25 : Public, Static, Literal, HasDefault
+    Int32 FolderOpenMid = 26 : Public, Static, Literal, HasDefault
+    Int32 FolderMidTail = 27 : Public, Static, Literal, HasDefault
+    Int32 FolderTail = 28 : Public, Static, Literal, HasDefault
+    Int32 FolderSub = 29 : Public, Static, Literal, HasDefault
+    Int32 Folder = 30 : Public, Static, Literal, HasDefault
+    Int32 FolderOpen = 31 : Public, Static, Literal, HasDefault
+  Properties:
+    Int32 Index 'get set' : 
+    ScintillaNET.MarkerSymbol Symbol 'get set' : 
+  Methods:
+    DefineRgbaImage(Bitmap): PrivateScope, Public, HideBySig
+    DeleteAll(): PrivateScope, Public, HideBySig
+    SetAlpha(Int32): PrivateScope, Public, HideBySig
+    SetBackColor(Color): PrivateScope, Public, HideBySig
+    SetForeColor(Color): PrivateScope, Public, HideBySig
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Symbol(): PrivateScope, Public, HideBySig, SpecialName
+    set_Symbol(MarkerSymbol): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.MarkerCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[ScintillaNET.Marker]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ScintillaNET.Marker Item [Int32] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.MarkerHandle: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    ScintillaNET.MarkerHandle Zero : Public, Static, InitOnly
+  Methods:
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(MarkerHandle, MarkerHandle): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(MarkerHandle, MarkerHandle): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct ScintillaNET.MarkerSymbol: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.MarkerSymbol Circle = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol RoundRect = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Arrow = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol SmallRect = 3 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol ShortArrow = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Empty = 5 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol ArrowDown = 6 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Minus = 7 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Plus = 8 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol VLine = 9 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol LCorner = 10 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol TCorner = 11 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol BoxPlus = 12 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol BoxPlusConnected = 13 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol BoxMinus = 14 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol BoxMinusConnected = 15 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol LCornerCurve = 16 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol TCornerCurve = 17 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol CirclePlus = 18 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol CirclePlusConnected = 19 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol CircleMinus = 20 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol CircleMinusConnected = 21 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Background = 22 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol DotDotDot = 23 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Arrows = 24 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol FullRect = 26 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol LeftRect = 27 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Available = 28 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Underline = 29 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol RgbaImage = 30 : Public, Static, Literal, HasDefault
+    ScintillaNET.MarkerSymbol Bookmark = 31 : Public, Static, Literal, HasDefault
+Class ScintillaNET.ModificationEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScintillaNET.BeforeModificationEventArgs
+    Void .ctor(ScintillaNET.Scintilla, ScintillaNET.ModificationSource, Int32, Int32, IntPtr, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 LinesAdded 'get set' : 
+    System.String Text 'get ' : 
+  Methods:
+    get_LinesAdded(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct ScintillaNET.ModificationSource: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.ModificationSource User = 16 : Public, Static, Literal, HasDefault
+    ScintillaNET.ModificationSource Undo = 32 : Public, Static, Literal, HasDefault
+    ScintillaNET.ModificationSource Redo = 64 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.MultiPaste: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.MultiPaste Once = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.MultiPaste Each = 1 : Public, Static, Literal, HasDefault
+Class ScintillaNET.NeedShownEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Length 'get ' : 
+    Int32 Position 'get ' : 
+  Methods:
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.Order: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Order Presorted = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Order PerformSort = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.Order Custom = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.Phases: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Phases One = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Phases Two = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.Phases Multiple = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.PopupMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.PopupMode Never = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.PopupMode All = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.PopupMode Text = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.PropertyType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.PropertyType Boolean = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.PropertyType Integer = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.PropertyType String = 2 : Public, Static, Literal, HasDefault
+Class ScintillaNET.ScintillaReader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.IO.TextReader
+    Void .ctor(ScintillaNET.Scintilla): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScintillaNET.Scintilla, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScintillaNET.Scintilla, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Peek(): PrivateScope, Public, Virtual, HideBySig
+    Read(): PrivateScope, Public, Virtual, HideBySig
+    Read(Char[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+    ReadBlock(Char[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig
+Class ScintillaNET.Scintilla: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 TimeForever = 10000000 : Public, Static, Literal, HasDefault
+    Int32 InvalidPosition = -1 : Public, Static, Literal, HasDefault
+  Properties:
+    System.Drawing.Color AdditionalCaretForeColor 'get set' : 
+    Boolean AdditionalCaretsBlink 'get set' : 
+    Boolean AdditionalCaretsVisible 'get set' : 
+    Int32 AdditionalSelAlpha 'get set' : 
+    Boolean AdditionalSelectionTyping 'get set' : 
+    Int32 AnchorPosition 'get set' : 
+    ScintillaNET.Annotation AnnotationVisible 'get set' : 
+    Boolean AutoCActive 'get ' : 
+    Boolean AutoCAutoHide 'get set' : 
+    Boolean AutoCCancelAtStart 'get set' : 
+    Int32 AutoCCurrent 'get ' : 
+    Boolean AutoCChooseSingle 'get set' : 
+    Boolean AutoCDropRestOfWord 'get set' : 
+    Boolean AutoCIgnoreCase 'get set' : 
+    Int32 AutoCMaxHeight 'get set' : 
+    Int32 AutoCMaxWidth 'get set' : 
+    ScintillaNET.Order AutoCOrder 'get set' : 
+    Int32 AutoCPosStart 'get ' : 
+    Char AutoCSeparator 'get set' : 
+    Char AutoCTypeSeparator 'get set' : 
+    ScintillaNET.AutomaticFold AutomaticFold 'get set' : 
+    System.Drawing.Color BackColor 'get set' : 
+    System.Drawing.Image BackgroundImage 'get set' : 
+    System.Windows.Forms.ImageLayout BackgroundImageLayout 'get set' : 
+    System.Windows.Forms.BorderStyle BorderStyle 'get set' : 
+    Boolean BufferedDraw 'get set' : 
+    Boolean CallTipActive 'get ' : 
+    Boolean CanPaste 'get ' : 
+    Boolean CanRedo 'get ' : 
+    Boolean CanUndo 'get ' : 
+    System.Drawing.Color CaretForeColor 'get set' : 
+    System.Drawing.Color CaretLineBackColor 'get set' : 
+    Int32 CaretLineBackColorAlpha 'get set' : 
+    Boolean CaretLineVisible 'get set' : 
+    Int32 CaretPeriod 'get set' : 
+    ScintillaNET.CaretStyle CaretStyle 'get set' : 
+    Int32 CaretWidth 'get set' : 
+    Int32 CurrentLine 'get ' : 
+    Int32 CurrentPosition 'get set' : 
+    System.Windows.Forms.Cursor Cursor 'get set' : 
+    ScintillaNET.Document Document 'get set' : 
+    System.Drawing.Color EdgeColor 'get set' : 
+    Int32 EdgeColumn 'get set' : 
+    ScintillaNET.EdgeMode EdgeMode 'get set' : 
+    Boolean EndAtLastLine 'get set' : 
+    ScintillaNET.Eol EolMode 'get set' : 
+    Int32 ExtraAscent 'get set' : 
+    Int32 ExtraDescent 'get set' : 
+    Int32 FirstVisibleLine 'get set' : 
+    System.Drawing.Font Font 'get set' : 
+    ScintillaNET.FontQuality FontQuality 'get set' : 
+    System.Drawing.Color ForeColor 'get set' : 
+    Int32 HighlightGuide 'get set' : 
+    Boolean HScrollBar 'get set' : 
+    ScintillaNET.IdleStyling IdleStyling 'get set' : 
+    Int32 IndentWidth 'get set' : 
+    ScintillaNET.IndentView IndentationGuides 'get set' : 
+    Int32 IndicatorCurrent 'get set' : 
+    ScintillaNET.IndicatorCollection Indicators 'get set' : 
+    Int32 IndicatorValue 'get set' : 
+    ScintillaNET.Lexer Lexer 'get set' : 
+    System.String LexerLanguage 'get set' : 
+    ScintillaNET.LineEndType LineEndTypesActive 'get ' : 
+    ScintillaNET.LineEndType LineEndTypesAllowed 'get set' : 
+    ScintillaNET.LineEndType LineEndTypesSupported 'get ' : 
+    ScintillaNET.LineCollection Lines 'get set' : 
+    Int32 LinesOnScreen 'get ' : 
+    Int32 MainSelection 'get set' : 
+    ScintillaNET.MarginCollection Margins 'get set' : 
+    ScintillaNET.MarkerCollection Markers 'get set' : 
+    Boolean Modified 'get ' : 
+    Int32 MouseDwellTime 'get set' : 
+    Boolean MouseSelectionRectangularSwitch 'get set' : 
+    Boolean MultipleSelection 'get set' : 
+    ScintillaNET.MultiPaste MultiPaste 'get set' : 
+    Boolean Overtype 'get set' : 
+    System.Windows.Forms.Padding Padding 'get set' : 
+    Boolean PasteConvertEndings 'get set' : 
+    ScintillaNET.Phases PhasesDraw 'get set' : 
+    Boolean ReadOnly 'get set' : 
+    Int32 RectangularSelectionAnchor 'get set' : 
+    Int32 RectangularSelectionAnchorVirtualSpace 'get set' : 
+    Int32 RectangularSelectionCaret 'get set' : 
+    Int32 RectangularSelectionCaretVirtualSpace 'get set' : 
+    Int32 ScrollWidth 'get set' : 
+    Boolean ScrollWidthTracking 'get set' : 
+    ScintillaNET.SearchFlags SearchFlags 'get set' : 
+    System.String SelectedText 'get ' : 
+    Int32 SelectionEnd 'get set' : 
+    Boolean SelectionEolFilled 'get set' : 
+    ScintillaNET.SelectionCollection Selections 'get set' : 
+    Int32 SelectionStart 'get set' : 
+    ScintillaNET.Status Status 'get set' : 
+    ScintillaNET.StyleCollection Styles 'get set' : 
+    ScintillaNET.TabDrawMode TabDrawMode 'get set' : 
+    Int32 TabWidth 'get set' : 
+    Int32 TargetEnd 'get set' : 
+    Int32 TargetStart 'get set' : 
+    System.String TargetText 'get ' : 
+    ScintillaNET.Technology Technology 'get set' : 
+    System.String Text 'get set' : 
+    Int32 TextLength 'get ' : 
+    Boolean UseTabs 'get set' : 
+    Boolean UseWaitCursor 'get set' : 
+    Boolean ViewEol 'get set' : 
+    ScintillaNET.WhitespaceMode ViewWhitespace 'get set' : 
+    ScintillaNET.VirtualSpace VirtualSpaceOptions 'get set' : 
+    Boolean VScrollBar 'get set' : 
+    Int32 WhitespaceSize 'get set' : 
+    System.String WordChars 'get set' : 
+    ScintillaNET.WrapIndentMode WrapIndentMode 'get set' : 
+    ScintillaNET.WrapMode WrapMode 'get set' : 
+    Int32 WrapStartIndent 'get set' : 
+    ScintillaNET.WrapVisualFlags WrapVisualFlags 'get set' : 
+    ScintillaNET.WrapVisualFlagLocation WrapVisualFlagLocation 'get set' : 
+    Int32 XOffset 'get set' : 
+    Int32 Zoom 'get set' : 
+  Events:
+    System.EventHandler`1[System.EventArgs] AutoCCancelled: 
+    System.EventHandler`1[System.EventArgs] AutoCCharDeleted: 
+    System.EventHandler`1[ScintillaNET.AutoCSelectionEventArgs] AutoCCompleted: 
+    System.EventHandler`1[ScintillaNET.AutoCSelectionEventArgs] AutoCSelection: 
+    System.EventHandler BackColorChanged: 
+    System.EventHandler BackgroundImageChanged: 
+    System.EventHandler BackgroundImageLayoutChanged: 
+    System.EventHandler`1[ScintillaNET.BeforeModificationEventArgs] BeforeDelete: 
+    System.EventHandler`1[ScintillaNET.BeforeModificationEventArgs] BeforeInsert: 
+    System.EventHandler BorderStyleChanged: 
+    System.EventHandler`1[ScintillaNET.ChangeAnnotationEventArgs] ChangeAnnotation: 
+    System.EventHandler`1[ScintillaNET.CharAddedEventArgs] CharAdded: 
+    System.EventHandler CursorChanged: 
+    System.EventHandler`1[ScintillaNET.ModificationEventArgs] Delete: 
+    System.EventHandler`1[ScintillaNET.DoubleClickEventArgs] DoubleClick: 
+    System.EventHandler`1[ScintillaNET.DwellEventArgs] DwellEnd: 
+    System.EventHandler`1[ScintillaNET.DwellEventArgs] DwellStart: 
+    System.EventHandler FontChanged: 
+    System.EventHandler ForeColorChanged: 
+    System.EventHandler`1[ScintillaNET.HotspotClickEventArgs] HotspotClick: 
+    System.EventHandler`1[ScintillaNET.HotspotClickEventArgs] HotspotDoubleClick: 
+    System.EventHandler`1[ScintillaNET.HotspotClickEventArgs] HotspotReleaseClick: 
+    System.EventHandler`1[ScintillaNET.IndicatorClickEventArgs] IndicatorClick: 
+    System.EventHandler`1[ScintillaNET.IndicatorReleaseEventArgs] IndicatorRelease: 
+    System.EventHandler`1[ScintillaNET.ModificationEventArgs] Insert: 
+    System.EventHandler`1[ScintillaNET.InsertCheckEventArgs] InsertCheck: 
+    System.EventHandler`1[ScintillaNET.MarginClickEventArgs] MarginClick: 
+    System.EventHandler`1[ScintillaNET.MarginClickEventArgs] MarginRightClick: 
+    System.EventHandler`1[System.EventArgs] ModifyAttempt: 
+    System.EventHandler`1[ScintillaNET.NeedShownEventArgs] NeedShown: 
+    System.Windows.Forms.PaintEventHandler Paint: 
+    System.EventHandler`1[System.EventArgs] Painted: 
+    System.EventHandler`1[System.EventArgs] SavePointLeft: 
+    System.EventHandler`1[System.EventArgs] SavePointReached: 
+    System.EventHandler`1[ScintillaNET.StyleNeededEventArgs] StyleNeeded: 
+    System.EventHandler`1[ScintillaNET.UpdateUIEventArgs] UpdateUI: 
+    System.EventHandler`1[System.EventArgs] ZoomChanged: 
+  Methods:
+    add_ForeColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ForeColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HotspotClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_HotspotClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_HotspotDoubleClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_HotspotDoubleClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_HotspotReleaseClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_HotspotReleaseClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_IndicatorClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_IndicatorClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_IndicatorRelease(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_IndicatorRelease(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_Insert(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_Insert(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_InsertCheck(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_InsertCheck(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_MarginClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_MarginClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_MarginRightClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_MarginRightClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ModifyAttempt(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ModifyAttempt(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_NeedShown(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_NeedShown(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_Paint(PaintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Paint(PaintEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Painted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_Painted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_SavePointLeft(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_SavePointLeft(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_SavePointReached(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_SavePointReached(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_StyleNeeded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_StyleNeeded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_UpdateUI(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_UpdateUI(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ZoomChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ZoomChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectionStart(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectionStart(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Status(): PrivateScope, Public, HideBySig, SpecialName
+    set_Status(Status): PrivateScope, Public, HideBySig, SpecialName
+    get_Styles(): PrivateScope, Public, HideBySig, SpecialName
+    get_TabDrawMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_TabDrawMode(TabDrawMode): PrivateScope, Public, HideBySig, SpecialName
+    get_TabWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_TabWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_TargetEnd(): PrivateScope, Public, HideBySig, SpecialName
+    set_TargetEnd(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_TargetStart(): PrivateScope, Public, HideBySig, SpecialName
+    set_TargetStart(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_TargetText(): PrivateScope, Public, HideBySig, SpecialName
+    get_Technology(): PrivateScope, Public, HideBySig, SpecialName
+    set_Technology(Technology): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TextLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_UseTabs(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseTabs(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_UseWaitCursor(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseWaitCursor(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewEol(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewEol(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewWhitespace(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewWhitespace(WhitespaceMode): PrivateScope, Public, HideBySig, SpecialName
+    get_VirtualSpaceOptions(): PrivateScope, Public, HideBySig, SpecialName
+    set_VirtualSpaceOptions(VirtualSpace): PrivateScope, Public, HideBySig, SpecialName
+    get_VScrollBar(): PrivateScope, Public, HideBySig, SpecialName
+    set_VScrollBar(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_WhitespaceSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_WhitespaceSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_WordChars(): PrivateScope, Public, HideBySig, SpecialName
+    set_WordChars(String): PrivateScope, Public, HideBySig, SpecialName
+    get_WrapIndentMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_WrapIndentMode(WrapIndentMode): PrivateScope, Public, HideBySig, SpecialName
+    get_WrapMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_WrapMode(WrapMode): PrivateScope, Public, HideBySig, SpecialName
+    get_WrapStartIndent(): PrivateScope, Public, HideBySig, SpecialName
+    set_WrapStartIndent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_WrapVisualFlags(): PrivateScope, Public, HideBySig, SpecialName
+    set_WrapVisualFlags(WrapVisualFlags): PrivateScope, Public, HideBySig, SpecialName
+    get_WrapVisualFlagLocation(): PrivateScope, Public, HideBySig, SpecialName
+    set_WrapVisualFlagLocation(WrapVisualFlagLocation): PrivateScope, Public, HideBySig, SpecialName
+    get_XOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_XOffset(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Int32): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoCCancelled(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoCCancelled(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoCCharDeleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoCCharDeleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoCCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoCCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoCSelection(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoCSelection(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_BackColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_BackColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_BackgroundImageChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_BackgroundImageChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_BackgroundImageLayoutChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_BackgroundImageLayoutChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_BeforeDelete(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_BeforeDelete(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_BeforeInsert(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_BeforeInsert(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_BorderStyleChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_BorderStyleChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ChangeAnnotation(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ChangeAnnotation(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_CharAdded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CharAdded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_CursorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CursorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Delete(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_Delete(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DoubleClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DoubleClick(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DwellEnd(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DwellEnd(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DwellStart(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DwellStart(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_FontChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FontChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_ExtraAscent(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExtraAscent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ExtraDescent(): PrivateScope, Public, HideBySig, SpecialName
+    set_ExtraDescent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_FirstVisibleLine(): PrivateScope, Public, HideBySig, SpecialName
+    set_FirstVisibleLine(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Font(Font): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_FontQuality(): PrivateScope, Public, HideBySig, SpecialName
+    set_FontQuality(FontQuality): PrivateScope, Public, HideBySig, SpecialName
+    get_ForeColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ForeColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HighlightGuide(): PrivateScope, Public, HideBySig, SpecialName
+    set_HighlightGuide(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_HScrollBar(): PrivateScope, Public, HideBySig, SpecialName
+    set_HScrollBar(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IdleStyling(): PrivateScope, Public, HideBySig, SpecialName
+    set_IdleStyling(IdleStyling): PrivateScope, Public, HideBySig, SpecialName
+    get_IndentWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_IndentWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IndentationGuides(): PrivateScope, Public, HideBySig, SpecialName
+    set_IndentationGuides(IndentView): PrivateScope, Public, HideBySig, SpecialName
+    get_IndicatorCurrent(): PrivateScope, Public, HideBySig, SpecialName
+    set_IndicatorCurrent(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Indicators(): PrivateScope, Public, HideBySig, SpecialName
+    get_IndicatorValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_IndicatorValue(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Lexer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Lexer(Lexer): PrivateScope, Public, HideBySig, SpecialName
+    get_LexerLanguage(): PrivateScope, Public, HideBySig, SpecialName
+    set_LexerLanguage(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LineEndTypesActive(): PrivateScope, Public, HideBySig, SpecialName
+    get_LineEndTypesAllowed(): PrivateScope, Public, HideBySig, SpecialName
+    set_LineEndTypesAllowed(LineEndType): PrivateScope, Public, HideBySig, SpecialName
+    get_LineEndTypesSupported(): PrivateScope, Public, HideBySig, SpecialName
+    get_Lines(): PrivateScope, Public, HideBySig, SpecialName
+    get_LinesOnScreen(): PrivateScope, Public, HideBySig, SpecialName
+    get_MainSelection(): PrivateScope, Public, HideBySig, SpecialName
+    set_MainSelection(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Margins(): PrivateScope, Public, HideBySig, SpecialName
+    get_Markers(): PrivateScope, Public, HideBySig, SpecialName
+    get_Modified(): PrivateScope, Public, HideBySig, SpecialName
+    get_MouseDwellTime(): PrivateScope, Public, HideBySig, SpecialName
+    set_MouseDwellTime(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MouseSelectionRectangularSwitch(): PrivateScope, Public, HideBySig, SpecialName
+    set_MouseSelectionRectangularSwitch(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MultipleSelection(): PrivateScope, Public, HideBySig, SpecialName
+    set_MultipleSelection(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MultiPaste(): PrivateScope, Public, HideBySig, SpecialName
+    set_MultiPaste(MultiPaste): PrivateScope, Public, HideBySig, SpecialName
+    get_Overtype(): PrivateScope, Public, HideBySig, SpecialName
+    set_Overtype(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Padding(): PrivateScope, Public, HideBySig, SpecialName
+    set_Padding(Padding): PrivateScope, Public, HideBySig, SpecialName
+    get_PasteConvertEndings(): PrivateScope, Public, HideBySig, SpecialName
+    set_PasteConvertEndings(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PhasesDraw(): PrivateScope, Public, HideBySig, SpecialName
+    set_PhasesDraw(Phases): PrivateScope, Public, HideBySig, SpecialName
+    get_ReadOnly(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReadOnly(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RectangularSelectionAnchor(): PrivateScope, Public, HideBySig, SpecialName
+    set_RectangularSelectionAnchor(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RectangularSelectionAnchorVirtualSpace(): PrivateScope, Public, HideBySig, SpecialName
+    set_RectangularSelectionAnchorVirtualSpace(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RectangularSelectionCaret(): PrivateScope, Public, HideBySig, SpecialName
+    set_RectangularSelectionCaret(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RectangularSelectionCaretVirtualSpace(): PrivateScope, Public, HideBySig, SpecialName
+    set_RectangularSelectionCaretVirtualSpace(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScrollWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScrollWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScrollWidthTracking(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScrollWidthTracking(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SearchFlags(): PrivateScope, Public, HideBySig, SpecialName
+    set_SearchFlags(SearchFlags): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedText(): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectionEnd(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectionEnd(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectionEolFilled(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectionEolFilled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Selections(): PrivateScope, Public, HideBySig, SpecialName
+    ZoomOut(): PrivateScope, Public, HideBySig
+    get_AdditionalCaretForeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_AdditionalCaretForeColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_AdditionalCaretsBlink(): PrivateScope, Public, HideBySig, SpecialName
+    set_AdditionalCaretsBlink(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AdditionalCaretsVisible(): PrivateScope, Public, HideBySig, SpecialName
+    set_AdditionalCaretsVisible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AdditionalSelAlpha(): PrivateScope, Public, HideBySig, SpecialName
+    set_AdditionalSelAlpha(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_AdditionalSelectionTyping(): PrivateScope, Public, HideBySig, SpecialName
+    set_AdditionalSelectionTyping(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AnchorPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnchorPosition(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_AnnotationVisible(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnnotationVisible(Annotation): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCActive(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCAutoHide(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCAutoHide(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCCancelAtStart(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCCancelAtStart(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCCurrent(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCChooseSingle(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCChooseSingle(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCDropRestOfWord(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCDropRestOfWord(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCIgnoreCase(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCIgnoreCase(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCMaxHeight(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCMaxHeight(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCMaxWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCMaxWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCOrder(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCOrder(Order): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCPosStart(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCSeparator(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCSeparator(Char): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCTypeSeparator(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCTypeSeparator(Char): PrivateScope, Public, HideBySig, SpecialName
+    get_AutomaticFold(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutomaticFold(AutomaticFold): PrivateScope, Public, HideBySig, SpecialName
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImage(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImage(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImageLayout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImageLayout(ImageLayout): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BorderStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_BorderStyle(BorderStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_BufferedDraw(): PrivateScope, Public, HideBySig, SpecialName
+    set_BufferedDraw(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CallTipActive(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanPaste(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanRedo(): PrivateScope, Public, HideBySig, SpecialName
+    get_CanUndo(): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretForeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretForeColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretLineBackColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretLineBackColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretLineBackColorAlpha(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretLineBackColorAlpha(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretLineVisible(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretLineVisible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretPeriod(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretPeriod(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretStyle(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretStyle(CaretStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentLine(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentPosition(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Cursor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Cursor(Cursor): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Document(): PrivateScope, Public, HideBySig, SpecialName
+    set_Document(Document): PrivateScope, Public, HideBySig, SpecialName
+    get_EdgeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_EdgeColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_EdgeColumn(): PrivateScope, Public, HideBySig, SpecialName
+    set_EdgeColumn(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_EdgeMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_EdgeMode(EdgeMode): PrivateScope, Public, HideBySig, SpecialName
+    get_EndAtLastLine(): PrivateScope, Public, HideBySig, SpecialName
+    set_EndAtLastLine(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EolMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_EolMode(Eol): PrivateScope, Public, HideBySig, SpecialName
+    MarkerLineFromHandle(MarkerHandle): PrivateScope, Public, HideBySig
+    MultiEdgeAddLine(Int32, Color): PrivateScope, Public, HideBySig
+    MultiEdgeClearAll(): PrivateScope, Public, HideBySig
+    MultipleSelectAddEach(): PrivateScope, Public, HideBySig
+    MultipleSelectAddNext(): PrivateScope, Public, HideBySig
+    Paste(): PrivateScope, Public, HideBySig
+    PointXFromPosition(Int32): PrivateScope, Public, HideBySig
+    PointYFromPosition(Int32): PrivateScope, Public, HideBySig
+    PropertyNames(): PrivateScope, Public, HideBySig
+    PropertyType(String): PrivateScope, Public, HideBySig
+    Redo(): PrivateScope, Public, HideBySig
+    RegisterRgbaImage(Int32, Bitmap): PrivateScope, Public, HideBySig
+    ReleaseDocument(Document): PrivateScope, Public, HideBySig
+    ReplaceSelection(String): PrivateScope, Public, HideBySig
+    ReplaceTarget(String): PrivateScope, Public, HideBySig
+    ReplaceTargetRe(String): PrivateScope, Public, HideBySig
+    RotateSelection(): PrivateScope, Public, HideBySig
+    ScrollCaret(): PrivateScope, Public, HideBySig
+    ScrollRange(Int32, Int32): PrivateScope, Public, HideBySig
+    SearchInTarget(String): PrivateScope, Public, HideBySig
+    SelectAll(): PrivateScope, Public, HideBySig
+    SetAdditionalSelBack(Color): PrivateScope, Public, HideBySig
+    SetAdditionalSelFore(Color): PrivateScope, Public, HideBySig
+    SetEmptySelection(Int32): PrivateScope, Public, HideBySig
+    SetFoldFlags(FoldFlags): PrivateScope, Public, HideBySig
+    SetFoldMarginColor(Boolean, Color): PrivateScope, Public, HideBySig
+    SetFoldMarginHighlightColor(Boolean, Color): PrivateScope, Public, HideBySig
+    SetKeywords(Int32, String): PrivateScope, Public, HideBySig
+    SetDestroyHandleBehavior(Boolean): PrivateScope, Public, Static, HideBySig
+    SetModulePath(String): PrivateScope, Public, Static, HideBySig
+    SetProperty(String, String): PrivateScope, Public, HideBySig
+    SetSavePoint(): PrivateScope, Public, HideBySig
+    SetSel(Int32, Int32): PrivateScope, Public, HideBySig
+    SetSelection(Int32, Int32): PrivateScope, Public, HideBySig
+    SetSelectionBackColor(Boolean, Color): PrivateScope, Public, HideBySig
+    SetSelectionForeColor(Boolean, Color): PrivateScope, Public, HideBySig
+    SetStyling(Int32, Int32): PrivateScope, Public, HideBySig
+    SetTargetRange(Int32, Int32): PrivateScope, Public, HideBySig
+    SetWhitespaceBackColor(Boolean, Color): PrivateScope, Public, HideBySig
+    SetWhitespaceForeColor(Boolean, Color): PrivateScope, Public, HideBySig
+    ShowLines(Int32, Int32): PrivateScope, Public, HideBySig
+    StartStyling(Int32): PrivateScope, Public, HideBySig
+    StyleClearAll(): PrivateScope, Public, HideBySig
+    StyleResetDefault(): PrivateScope, Public, HideBySig
+    SwapMainAnchorCaret(): PrivateScope, Public, HideBySig
+    TargetFromSelection(): PrivateScope, Public, HideBySig
+    TargetWholeDocument(): PrivateScope, Public, HideBySig
+    TextWidth(Int32, String): PrivateScope, Public, HideBySig
+    Undo(): PrivateScope, Public, HideBySig
+    UsePopup(Boolean): PrivateScope, Public, HideBySig
+    UsePopup(PopupMode): PrivateScope, Public, HideBySig
+    WordEndPosition(Int32, Boolean): PrivateScope, Public, HideBySig
+    WordStartPosition(Int32, Boolean): PrivateScope, Public, HideBySig
+    ZoomIn(): PrivateScope, Public, HideBySig
+    AddRefDocument(Document): PrivateScope, Public, HideBySig
+    AddSelection(Int32, Int32): PrivateScope, Public, HideBySig
+    AddText(String): PrivateScope, Public, HideBySig
+    AnnotationClearAll(): PrivateScope, Public, HideBySig
+    AppendText(String): PrivateScope, Public, HideBySig
+    AssignCmdKey(Keys, Command): PrivateScope, Public, HideBySig
+    AutoCCancel(): PrivateScope, Public, HideBySig
+    AutoCComplete(): PrivateScope, Public, HideBySig
+    AutoCSelect(String): PrivateScope, Public, HideBySig
+    AutoCSetFillUps(String): PrivateScope, Public, HideBySig
+    AutoCShow(Int32, String): PrivateScope, Public, HideBySig
+    AutoCStops(String): PrivateScope, Public, HideBySig
+    BeginUndoAction(): PrivateScope, Public, HideBySig
+    BraceBadLight(Int32): PrivateScope, Public, HideBySig
+    BraceHighlight(Int32, Int32): PrivateScope, Public, HideBySig
+    BraceMatch(Int32): PrivateScope, Public, HideBySig
+    CallTipCancel(): PrivateScope, Public, HideBySig
+    CallTipSetForeHlt(Color): PrivateScope, Public, HideBySig
+    CallTipSetHlt(Int32, Int32): PrivateScope, Public, HideBySig
+    CallTipSetPosition(Boolean): PrivateScope, Public, HideBySig
+    CallTipShow(Int32, String): PrivateScope, Public, HideBySig
+    CallTipTabSize(Int32): PrivateScope, Public, HideBySig
+    ChangeLexerState(Int32, Int32): PrivateScope, Public, HideBySig
+    CharPositionFromPoint(Int32, Int32): PrivateScope, Public, HideBySig
+    CharPositionFromPointClose(Int32, Int32): PrivateScope, Public, HideBySig
+    ChooseCaretX(): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    ClearAll(): PrivateScope, Public, HideBySig
+    ClearCmdKey(Keys): PrivateScope, Public, HideBySig
+    ClearAllCmdKeys(): PrivateScope, Public, HideBySig
+    ClearDocumentStyle(): PrivateScope, Public, HideBySig
+    ClearRegisteredImages(): PrivateScope, Public, HideBySig
+    ClearSelections(): PrivateScope, Public, HideBySig
+    Colorize(Int32, Int32): PrivateScope, Public, HideBySig
+    ConvertEols(Eol): PrivateScope, Public, HideBySig
+    Copy(): PrivateScope, Public, HideBySig
+    Copy(CopyFormat): PrivateScope, Public, HideBySig
+    CopyAllowLine(): PrivateScope, Public, HideBySig
+    CopyAllowLine(CopyFormat): PrivateScope, Public, HideBySig
+    CopyRange(Int32, Int32): PrivateScope, Public, HideBySig
+    CopyRange(Int32, Int32, CopyFormat): PrivateScope, Public, HideBySig
+    CreateDocument(): PrivateScope, Public, HideBySig
+    CreateLoader(Int32): PrivateScope, Public, HideBySig
+    Cut(): PrivateScope, Public, HideBySig
+    DeleteRange(Int32, Int32): PrivateScope, Public, HideBySig
+    DescribeKeywordSets(): PrivateScope, Public, HideBySig
+    DescribeProperty(String): PrivateScope, Public, HideBySig
+    DirectMessage(Int32, IntPtr, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DocLineFromVisible(Int32): PrivateScope, Public, HideBySig
+    DropSelection(Int32): PrivateScope, Public, HideBySig
+    EmptyUndoBuffer(): PrivateScope, Public, HideBySig
+    EndUndoAction(): PrivateScope, Public, HideBySig
+    ExecuteCmd(Command): PrivateScope, Public, HideBySig
+    FoldAll(FoldAction): PrivateScope, Public, HideBySig
+    FoldDisplayTextSetStyle(FoldDisplayText): PrivateScope, Public, HideBySig
+    GetCharAt(Int32): PrivateScope, Public, HideBySig
+    GetColumn(Int32): PrivateScope, Public, HideBySig
+    GetEndStyled(): PrivateScope, Public, HideBySig
+    GetProperty(String): PrivateScope, Public, HideBySig
+    GetPropertyExpanded(String): PrivateScope, Public, HideBySig
+    GetPropertyInt(String, Int32): PrivateScope, Public, HideBySig
+    GetStyleAt(Int32): PrivateScope, Public, HideBySig
+    GetTag(Int32): PrivateScope, Public, HideBySig
+    GetTextRange(Int32, Int32): PrivateScope, Public, HideBySig
+    GetTextRangeAsHtml(Int32, Int32): PrivateScope, Public, HideBySig
+    GetVersionInfo(): PrivateScope, Public, HideBySig
+    GetWordFromPosition(Int32): PrivateScope, Public, HideBySig
+    GotoPosition(Int32): PrivateScope, Public, HideBySig
+    HideLines(Int32, Int32): PrivateScope, Public, HideBySig
+    IndicatorAllOnFor(Int32): PrivateScope, Public, HideBySig
+    IndicatorClearRange(Int32, Int32): PrivateScope, Public, HideBySig
+    IndicatorFillRange(Int32, Int32): PrivateScope, Public, HideBySig
+    InsertText(Int32, String): PrivateScope, Public, HideBySig
+    IsRangeWord(Int32, Int32): PrivateScope, Public, HideBySig
+    LineFromPosition(Int32): PrivateScope, Public, HideBySig
+    LineScroll(Int32, Int32): PrivateScope, Public, HideBySig
+    LoadLexerLibrary(String): PrivateScope, Public, HideBySig
+    MarkerDeleteAll(Int32): PrivateScope, Public, HideBySig
+    MarkerDeleteHandle(MarkerHandle): PrivateScope, Public, HideBySig
+    MarkerEnableHighlight(Boolean): PrivateScope, Public, HideBySig
+Struct ScintillaNET.SearchFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.SearchFlags None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.SearchFlags MatchCase = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.SearchFlags WholeWord = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.SearchFlags WordStart = 1048576 : Public, Static, Literal, HasDefault
+    ScintillaNET.SearchFlags Regex = 2097152 : Public, Static, Literal, HasDefault
+    ScintillaNET.SearchFlags Posix = 4194304 : Public, Static, Literal, HasDefault
+    ScintillaNET.SearchFlags Cxx11Regex = 8388608 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Selection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Anchor 'get set' : 
+    Int32 AnchorVirtualSpace 'get set' : 
+    Int32 Caret 'get set' : 
+    Int32 CaretVirtualSpace 'get set' : 
+    Int32 End  'get set' : 
+    Int32 Index 'get set' : 
+    Int32 Start 'get set' : 
+  Methods:
+    get_Anchor(): PrivateScope, Public, HideBySig, SpecialName
+    set_Anchor(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_AnchorVirtualSpace(): PrivateScope, Public, HideBySig, SpecialName
+    set_AnchorVirtualSpace(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Caret(): PrivateScope, Public, HideBySig, SpecialName
+    set_Caret(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CaretVirtualSpace(): PrivateScope, Public, HideBySig, SpecialName
+    set_CaretVirtualSpace(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_End(): PrivateScope, Public, HideBySig, SpecialName
+    set_End(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Start(): PrivateScope, Public, HideBySig, SpecialName
+    set_Start(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.SelectionCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[ScintillaNET.Selection]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    Boolean IsEmpty 'get ' : 
+    ScintillaNET.Selection Item [Int32] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.Status: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Status Ok = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Status Failure = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.Status BadAlloc = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.Status WarnRegex = 1001 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Default = 32 : Public, Static, Literal, HasDefault
+    Int32 LineNumber = 33 : Public, Static, Literal, HasDefault
+    Int32 CallTip = 38 : Public, Static, Literal, HasDefault
+    Int32 IndentGuide = 37 : Public, Static, Literal, HasDefault
+    Int32 BraceLight = 34 : Public, Static, Literal, HasDefault
+    Int32 BraceBad = 35 : Public, Static, Literal, HasDefault
+    Int32 FoldDisplayText = 39 : Public, Static, Literal, HasDefault
+  Properties:
+    System.Drawing.Color BackColor 'get set' : 
+    Boolean Bold 'get set' : 
+    ScintillaNET.StyleCase Case 'get set' : 
+    Boolean FillLine 'get set' : 
+    System.String Font 'get set' : 
+    System.Drawing.Color ForeColor 'get set' : 
+    Boolean Hotspot 'get set' : 
+    Int32 Index 'get set' : 
+    Boolean Italic 'get set' : 
+    Int32 Size 'get set' : 
+    Single SizeF 'get set' : 
+    Boolean Underline 'get set' : 
+    Boolean Visible 'get set' : 
+    Int32 Weight 'get set' : 
+  Methods:
+    CopyTo(Style): PrivateScope, Public, HideBySig
+    get_BackColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Bold(): PrivateScope, Public, HideBySig, SpecialName
+    set_Bold(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Case(): PrivateScope, Public, HideBySig, SpecialName
+    set_Case(StyleCase): PrivateScope, Public, HideBySig, SpecialName
+    get_FillLine(): PrivateScope, Public, HideBySig, SpecialName
+    set_FillLine(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Font(): PrivateScope, Public, HideBySig, SpecialName
+    set_Font(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ForeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ForeColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Hotspot(): PrivateScope, Public, HideBySig, SpecialName
+    set_Hotspot(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Italic(): PrivateScope, Public, HideBySig, SpecialName
+    set_Italic(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    set_Size(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SizeF(): PrivateScope, Public, HideBySig, SpecialName
+    set_SizeF(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Underline(): PrivateScope, Public, HideBySig, SpecialName
+    set_Underline(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Weight(): PrivateScope, Public, HideBySig, SpecialName
+    set_Weight(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.StyleCase: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.StyleCase Mixed = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.StyleCase Upper = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.StyleCase Lower = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.StyleCase Camel = 3 : Public, Static, Literal, HasDefault
+Class ScintillaNET.StyleCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScintillaNET.Scintilla): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[ScintillaNET.Style]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    ScintillaNET.Style Item [Int32] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class ScintillaNET.StyleNeededEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.Scintilla, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Position 'get ' : 
+  Methods:
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.TabDrawMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.TabDrawMode LongArrow = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.TabDrawMode Strikeout = 1 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.Technology: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.Technology Default = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.Technology DirectWrite = 1 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.UpdateChange: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.UpdateChange Content = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.UpdateChange Selection = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.UpdateChange VScroll = 4 : Public, Static, Literal, HasDefault
+    ScintillaNET.UpdateChange HScroll = 8 : Public, Static, Literal, HasDefault
+Class ScintillaNET.UpdateUIEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ScintillaNET.UpdateChange): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScintillaNET.UpdateChange Change 'get set' : 
+  Methods:
+    get_Change(): PrivateScope, Public, HideBySig, SpecialName
+Struct ScintillaNET.VirtualSpace: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.VirtualSpace None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.VirtualSpace RectangularSelection = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.VirtualSpace UserAccessible = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.VirtualSpace NoWrapLineStart = 4 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.WhitespaceMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.WhitespaceMode Invisible = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.WhitespaceMode VisibleAlways = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.WhitespaceMode VisibleAfterIndent = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.WhitespaceMode VisibleOnlyIndent = 3 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.WrapIndentMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.WrapIndentMode Fixed = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapIndentMode Same = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapIndentMode Indent = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.WrapMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.WrapMode None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapMode Word = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapMode Char = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapMode Whitespace = 3 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.WrapVisualFlagLocation: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.WrapVisualFlagLocation Default = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapVisualFlagLocation EndByText = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapVisualFlagLocation StartByText = 2 : Public, Static, Literal, HasDefault
+Struct ScintillaNET.WrapVisualFlags: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ScintillaNET.WrapVisualFlags None = 0 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapVisualFlags End = 1 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapVisualFlags Start = 2 : Public, Static, Literal, HasDefault
+    ScintillaNET.WrapVisualFlags Margin = 4 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Ada: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 10 : Public, Static, Literal, HasDefault
+    Int32 Number = 3 : Public, Static, Literal, HasDefault
+    Int32 Word = 1 : Public, Static, Literal, HasDefault
+    Int32 String = 7 : Public, Static, Literal, HasDefault
+    Int32 Character = 5 : Public, Static, Literal, HasDefault
+    Int32 Delimiter = 4 : Public, Static, Literal, HasDefault
+    Int32 Label = 9 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 2 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 8 : Public, Static, Literal, HasDefault
+    Int32 CharacterEol = 6 : Public, Static, Literal, HasDefault
+    Int32 Illegal = 11 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Asm: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 CommentBlock = 11 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 MathInstruction = 7 : Public, Static, Literal, HasDefault
+    Int32 String = 3 : Public, Static, Literal, HasDefault
+    Int32 Character = 12 : Public, Static, Literal, HasDefault
+    Int32 CpuInstruction = 6 : Public, Static, Literal, HasDefault
+    Int32 Register = 8 : Public, Static, Literal, HasDefault
+    Int32 Operator = 4 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 5 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 13 : Public, Static, Literal, HasDefault
+    Int32 Directive = 9 : Public, Static, Literal, HasDefault
+    Int32 DirectiveOperand = 10 : Public, Static, Literal, HasDefault
+    Int32 ExtInstruction = 14 : Public, Static, Literal, HasDefault
+    Int32 CommentDirective = 15 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+BlitzBasic: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 3 : Public, Static, Literal, HasDefault
+    Int32 String = 4 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 5 : Public, Static, Literal, HasDefault
+    Int32 Operator = 6 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Date = 8 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 9 : Public, Static, Literal, HasDefault
+    Int32 Keyword2 = 10 : Public, Static, Literal, HasDefault
+    Int32 Keyword3 = 11 : Public, Static, Literal, HasDefault
+    Int32 Keyword4 = 12 : Public, Static, Literal, HasDefault
+    Int32 Constant = 13 : Public, Static, Literal, HasDefault
+    Int32 Asm = 14 : Public, Static, Literal, HasDefault
+    Int32 Label = 15 : Public, Static, Literal, HasDefault
+    Int32 Error = 16 : Public, Static, Literal, HasDefault
+    Int32 HexNumber = 17 : Public, Static, Literal, HasDefault
+    Int32 BinNumber = 18 : Public, Static, Literal, HasDefault
+    Int32 CommentBlock = 19 : Public, Static, Literal, HasDefault
+    Int32 DocLine = 20 : Public, Static, Literal, HasDefault
+    Int32 DocBlock = 21 : Public, Static, Literal, HasDefault
+    Int32 DocKeyword = 22 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Batch: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Word = 2 : Public, Static, Literal, HasDefault
+    Int32 Label = 3 : Public, Static, Literal, HasDefault
+    Int32 Hide = 4 : Public, Static, Literal, HasDefault
+    Int32 Command = 5 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 6 : Public, Static, Literal, HasDefault
+    Int32 Operator = 7 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Cpp: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 2 : Public, Static, Literal, HasDefault
+    Int32 CommentDoc = 3 : Public, Static, Literal, HasDefault
+    Int32 Number = 4 : Public, Static, Literal, HasDefault
+    Int32 Word = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 Character = 7 : Public, Static, Literal, HasDefault
+    Int32 Uuid = 8 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 11 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 12 : Public, Static, Literal, HasDefault
+    Int32 Verbatim = 13 : Public, Static, Literal, HasDefault
+    Int32 Regex = 14 : Public, Static, Literal, HasDefault
+    Int32 CommentLineDoc = 15 : Public, Static, Literal, HasDefault
+    Int32 Word2 = 16 : Public, Static, Literal, HasDefault
+    Int32 CommentDocKeyword = 17 : Public, Static, Literal, HasDefault
+    Int32 CommentDocKeywordError = 18 : Public, Static, Literal, HasDefault
+    Int32 GlobalClass = 19 : Public, Static, Literal, HasDefault
+    Int32 StringRaw = 20 : Public, Static, Literal, HasDefault
+    Int32 TripleVerbatim = 21 : Public, Static, Literal, HasDefault
+    Int32 HashQuotedString = 22 : Public, Static, Literal, HasDefault
+    Int32 PreprocessorComment = 23 : Public, Static, Literal, HasDefault
+    Int32 PreprocessorCommentDoc = 24 : Public, Static, Literal, HasDefault
+    Int32 UserLiteral = 25 : Public, Static, Literal, HasDefault
+    Int32 TaskMarker = 26 : Public, Static, Literal, HasDefault
+    Int32 EscapeSequence = 27 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Css: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Tag = 1 : Public, Static, Literal, HasDefault
+    Int32 Class = 2 : Public, Static, Literal, HasDefault
+    Int32 PseudoClass = 3 : Public, Static, Literal, HasDefault
+    Int32 UnknownPseudoClass = 4 : Public, Static, Literal, HasDefault
+    Int32 Operator = 5 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 6 : Public, Static, Literal, HasDefault
+    Int32 UnknownIdentifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Value = 8 : Public, Static, Literal, HasDefault
+    Int32 Comment = 9 : Public, Static, Literal, HasDefault
+    Int32 Id = 10 : Public, Static, Literal, HasDefault
+    Int32 Important = 11 : Public, Static, Literal, HasDefault
+    Int32 Directive = 12 : Public, Static, Literal, HasDefault
+    Int32 DoubleString = 13 : Public, Static, Literal, HasDefault
+    Int32 SingleString = 14 : Public, Static, Literal, HasDefault
+    Int32 Identifier2 = 15 : Public, Static, Literal, HasDefault
+    Int32 Attribute = 16 : Public, Static, Literal, HasDefault
+    Int32 Identifier3 = 17 : Public, Static, Literal, HasDefault
+    Int32 PseudoElement = 18 : Public, Static, Literal, HasDefault
+    Int32 ExtendedIdentifier = 19 : Public, Static, Literal, HasDefault
+    Int32 ExtendedPseudoClass = 20 : Public, Static, Literal, HasDefault
+    Int32 ExtendedPseudoElement = 21 : Public, Static, Literal, HasDefault
+    Int32 Media = 22 : Public, Static, Literal, HasDefault
+    Int32 Variable = 23 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Fortran: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 String1 = 3 : Public, Static, Literal, HasDefault
+    Int32 String2 = 4 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 5 : Public, Static, Literal, HasDefault
+    Int32 Operator = 6 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Word = 8 : Public, Static, Literal, HasDefault
+    Int32 Word2 = 9 : Public, Static, Literal, HasDefault
+    Int32 Word3 = 10 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 11 : Public, Static, Literal, HasDefault
+    Int32 Operator2 = 12 : Public, Static, Literal, HasDefault
+    Int32 Label = 13 : Public, Static, Literal, HasDefault
+    Int32 Continuation = 14 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+FreeBasic: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 3 : Public, Static, Literal, HasDefault
+    Int32 String = 4 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 5 : Public, Static, Literal, HasDefault
+    Int32 Operator = 6 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Date = 8 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 9 : Public, Static, Literal, HasDefault
+    Int32 Keyword2 = 10 : Public, Static, Literal, HasDefault
+    Int32 Keyword3 = 11 : Public, Static, Literal, HasDefault
+    Int32 Keyword4 = 12 : Public, Static, Literal, HasDefault
+    Int32 Constant = 13 : Public, Static, Literal, HasDefault
+    Int32 Asm = 14 : Public, Static, Literal, HasDefault
+    Int32 Label = 15 : Public, Static, Literal, HasDefault
+    Int32 Error = 16 : Public, Static, Literal, HasDefault
+    Int32 HexNumber = 17 : Public, Static, Literal, HasDefault
+    Int32 BinNumber = 18 : Public, Static, Literal, HasDefault
+    Int32 CommentBlock = 19 : Public, Static, Literal, HasDefault
+    Int32 DocLine = 20 : Public, Static, Literal, HasDefault
+    Int32 DocBlock = 21 : Public, Static, Literal, HasDefault
+    Int32 DocKeyword = 22 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Html: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Tag = 1 : Public, Static, Literal, HasDefault
+    Int32 TagUnknown = 2 : Public, Static, Literal, HasDefault
+    Int32 Attribute = 3 : Public, Static, Literal, HasDefault
+    Int32 AttributeUnknown = 4 : Public, Static, Literal, HasDefault
+    Int32 Number = 5 : Public, Static, Literal, HasDefault
+    Int32 DoubleString = 6 : Public, Static, Literal, HasDefault
+    Int32 SingleString = 7 : Public, Static, Literal, HasDefault
+    Int32 Other = 8 : Public, Static, Literal, HasDefault
+    Int32 Comment = 9 : Public, Static, Literal, HasDefault
+    Int32 Entity = 10 : Public, Static, Literal, HasDefault
+    Int32 TagEnd = 11 : Public, Static, Literal, HasDefault
+    Int32 XmlStart = 12 : Public, Static, Literal, HasDefault
+    Int32 XmlEnd = 13 : Public, Static, Literal, HasDefault
+    Int32 Script = 14 : Public, Static, Literal, HasDefault
+    Int32 Asp = 15 : Public, Static, Literal, HasDefault
+    Int32 AspAt = 16 : Public, Static, Literal, HasDefault
+    Int32 CData = 17 : Public, Static, Literal, HasDefault
+    Int32 Question = 18 : Public, Static, Literal, HasDefault
+    Int32 Value = 19 : Public, Static, Literal, HasDefault
+    Int32 XcComment = 20 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Json: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Number = 1 : Public, Static, Literal, HasDefault
+    Int32 String = 2 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 3 : Public, Static, Literal, HasDefault
+    Int32 PropertyName = 4 : Public, Static, Literal, HasDefault
+    Int32 EscapeSequence = 5 : Public, Static, Literal, HasDefault
+    Int32 LineComment = 6 : Public, Static, Literal, HasDefault
+    Int32 BlockComment = 7 : Public, Static, Literal, HasDefault
+    Int32 Operator = 8 : Public, Static, Literal, HasDefault
+    Int32 Uri = 9 : Public, Static, Literal, HasDefault
+    Int32 CompactIRI = 10 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 11 : Public, Static, Literal, HasDefault
+    Int32 LdKeyword = 12 : Public, Static, Literal, HasDefault
+    Int32 Error = 13 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Lisp: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 3 : Public, Static, Literal, HasDefault
+    Int32 KeywordKw = 4 : Public, Static, Literal, HasDefault
+    Int32 Symbol = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 8 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Special = 11 : Public, Static, Literal, HasDefault
+    Int32 MultiComment = 12 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Lua: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 2 : Public, Static, Literal, HasDefault
+    Int32 CommentDoc = 3 : Public, Static, Literal, HasDefault
+    Int32 Number = 4 : Public, Static, Literal, HasDefault
+    Int32 Word = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 Character = 7 : Public, Static, Literal, HasDefault
+    Int32 LiteralString = 8 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 11 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 12 : Public, Static, Literal, HasDefault
+    Int32 Word2 = 13 : Public, Static, Literal, HasDefault
+    Int32 Word3 = 14 : Public, Static, Literal, HasDefault
+    Int32 Word4 = 15 : Public, Static, Literal, HasDefault
+    Int32 Word5 = 16 : Public, Static, Literal, HasDefault
+    Int32 Word6 = 17 : Public, Static, Literal, HasDefault
+    Int32 Word7 = 18 : Public, Static, Literal, HasDefault
+    Int32 Word8 = 19 : Public, Static, Literal, HasDefault
+    Int32 Label = 20 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Pascal: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 1 : Public, Static, Literal, HasDefault
+    Int32 Comment = 2 : Public, Static, Literal, HasDefault
+    Int32 Comment2 = 3 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 4 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 5 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor2 = 6 : Public, Static, Literal, HasDefault
+    Int32 Number = 7 : Public, Static, Literal, HasDefault
+    Int32 HexNumber = 8 : Public, Static, Literal, HasDefault
+    Int32 Word = 9 : Public, Static, Literal, HasDefault
+    Int32 String = 10 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 11 : Public, Static, Literal, HasDefault
+    Int32 Character = 12 : Public, Static, Literal, HasDefault
+    Int32 Operator = 13 : Public, Static, Literal, HasDefault
+    Int32 Asm = 14 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Perl: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Error = 1 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 2 : Public, Static, Literal, HasDefault
+    Int32 Pod = 3 : Public, Static, Literal, HasDefault
+    Int32 Number = 4 : Public, Static, Literal, HasDefault
+    Int32 Word = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 Character = 7 : Public, Static, Literal, HasDefault
+    Int32 Punctuation = 8 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 11 : Public, Static, Literal, HasDefault
+    Int32 Scalar = 12 : Public, Static, Literal, HasDefault
+    Int32 Array = 13 : Public, Static, Literal, HasDefault
+    Int32 Hash = 14 : Public, Static, Literal, HasDefault
+    Int32 SymbolTable = 15 : Public, Static, Literal, HasDefault
+    Int32 VariableIndexer = 16 : Public, Static, Literal, HasDefault
+    Int32 Regex = 17 : Public, Static, Literal, HasDefault
+    Int32 RegSubst = 18 : Public, Static, Literal, HasDefault
+    Int32 BackTicks = 20 : Public, Static, Literal, HasDefault
+    Int32 DataSection = 21 : Public, Static, Literal, HasDefault
+    Int32 HereDelim = 22 : Public, Static, Literal, HasDefault
+    Int32 HereQ = 23 : Public, Static, Literal, HasDefault
+    Int32 HereQq = 24 : Public, Static, Literal, HasDefault
+    Int32 HereQx = 25 : Public, Static, Literal, HasDefault
+    Int32 StringQ = 26 : Public, Static, Literal, HasDefault
+    Int32 StringQq = 27 : Public, Static, Literal, HasDefault
+    Int32 StringQx = 28 : Public, Static, Literal, HasDefault
+    Int32 StringQr = 29 : Public, Static, Literal, HasDefault
+    Int32 StringQw = 30 : Public, Static, Literal, HasDefault
+    Int32 PodVerb = 31 : Public, Static, Literal, HasDefault
+    Int32 SubPrototype = 40 : Public, Static, Literal, HasDefault
+    Int32 FormatIdent = 41 : Public, Static, Literal, HasDefault
+    Int32 Format = 42 : Public, Static, Literal, HasDefault
+    Int32 StringVar = 43 : Public, Static, Literal, HasDefault
+    Int32 XLat = 44 : Public, Static, Literal, HasDefault
+    Int32 RegexVar = 54 : Public, Static, Literal, HasDefault
+    Int32 RegSubstVar = 55 : Public, Static, Literal, HasDefault
+    Int32 BackticksVar = 57 : Public, Static, Literal, HasDefault
+    Int32 HereQqVar = 61 : Public, Static, Literal, HasDefault
+    Int32 HereQxVar = 62 : Public, Static, Literal, HasDefault
+    Int32 StringQqVar = 64 : Public, Static, Literal, HasDefault
+    Int32 StringQxVar = 65 : Public, Static, Literal, HasDefault
+    Int32 StringQrVar = 66 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+PhpScript: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 ComplexVariable = 104 : Public, Static, Literal, HasDefault
+    Int32 Default = 118 : Public, Static, Literal, HasDefault
+    Int32 HString = 119 : Public, Static, Literal, HasDefault
+    Int32 SimpleString = 120 : Public, Static, Literal, HasDefault
+    Int32 Word = 121 : Public, Static, Literal, HasDefault
+    Int32 Number = 122 : Public, Static, Literal, HasDefault
+    Int32 Variable = 123 : Public, Static, Literal, HasDefault
+    Int32 Comment = 124 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 125 : Public, Static, Literal, HasDefault
+    Int32 HStringVariable = 126 : Public, Static, Literal, HasDefault
+    Int32 Operator = 127 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+PowerShell: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 String = 2 : Public, Static, Literal, HasDefault
+    Int32 Character = 3 : Public, Static, Literal, HasDefault
+    Int32 Number = 4 : Public, Static, Literal, HasDefault
+    Int32 Variable = 5 : Public, Static, Literal, HasDefault
+    Int32 Operator = 6 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 8 : Public, Static, Literal, HasDefault
+    Int32 Cmdlet = 9 : Public, Static, Literal, HasDefault
+    Int32 Alias = 10 : Public, Static, Literal, HasDefault
+    Int32 Function = 11 : Public, Static, Literal, HasDefault
+    Int32 User1 = 12 : Public, Static, Literal, HasDefault
+    Int32 CommentStream = 13 : Public, Static, Literal, HasDefault
+    Int32 HereString = 14 : Public, Static, Literal, HasDefault
+    Int32 HereCharacter = 15 : Public, Static, Literal, HasDefault
+    Int32 CommentDocKeyword = 16 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Properties: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Section = 2 : Public, Static, Literal, HasDefault
+    Int32 Assignment = 3 : Public, Static, Literal, HasDefault
+    Int32 DefVal = 4 : Public, Static, Literal, HasDefault
+    Int32 Key = 5 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+PureBasic: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 3 : Public, Static, Literal, HasDefault
+    Int32 String = 4 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 5 : Public, Static, Literal, HasDefault
+    Int32 Operator = 6 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Date = 8 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 9 : Public, Static, Literal, HasDefault
+    Int32 Keyword2 = 10 : Public, Static, Literal, HasDefault
+    Int32 Keyword3 = 11 : Public, Static, Literal, HasDefault
+    Int32 Keyword4 = 12 : Public, Static, Literal, HasDefault
+    Int32 Constant = 13 : Public, Static, Literal, HasDefault
+    Int32 Asm = 14 : Public, Static, Literal, HasDefault
+    Int32 Label = 15 : Public, Static, Literal, HasDefault
+    Int32 Error = 16 : Public, Static, Literal, HasDefault
+    Int32 HexNumber = 17 : Public, Static, Literal, HasDefault
+    Int32 BinNumber = 18 : Public, Static, Literal, HasDefault
+    Int32 CommentBlock = 19 : Public, Static, Literal, HasDefault
+    Int32 DocLine = 20 : Public, Static, Literal, HasDefault
+    Int32 DocBlock = 21 : Public, Static, Literal, HasDefault
+    Int32 DocKeyword = 22 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Python: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 String = 3 : Public, Static, Literal, HasDefault
+    Int32 Character = 4 : Public, Static, Literal, HasDefault
+    Int32 Word = 5 : Public, Static, Literal, HasDefault
+    Int32 Triple = 6 : Public, Static, Literal, HasDefault
+    Int32 TripleDouble = 7 : Public, Static, Literal, HasDefault
+    Int32 ClassName = 8 : Public, Static, Literal, HasDefault
+    Int32 DefName = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 11 : Public, Static, Literal, HasDefault
+    Int32 CommentBlock = 12 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 13 : Public, Static, Literal, HasDefault
+    Int32 Word2 = 14 : Public, Static, Literal, HasDefault
+    Int32 Decorator = 15 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Ruby: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Error = 1 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 2 : Public, Static, Literal, HasDefault
+    Int32 Pod = 3 : Public, Static, Literal, HasDefault
+    Int32 Number = 4 : Public, Static, Literal, HasDefault
+    Int32 Word = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 Character = 7 : Public, Static, Literal, HasDefault
+    Int32 ClassName = 8 : Public, Static, Literal, HasDefault
+    Int32 DefName = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 11 : Public, Static, Literal, HasDefault
+    Int32 Regex = 12 : Public, Static, Literal, HasDefault
+    Int32 Global = 13 : Public, Static, Literal, HasDefault
+    Int32 Symbol = 14 : Public, Static, Literal, HasDefault
+    Int32 ModuleName = 15 : Public, Static, Literal, HasDefault
+    Int32 InstanceVar = 16 : Public, Static, Literal, HasDefault
+    Int32 ClassVar = 17 : Public, Static, Literal, HasDefault
+    Int32 BackTicks = 18 : Public, Static, Literal, HasDefault
+    Int32 DataSection = 19 : Public, Static, Literal, HasDefault
+    Int32 HereDelim = 20 : Public, Static, Literal, HasDefault
+    Int32 HereQ = 21 : Public, Static, Literal, HasDefault
+    Int32 HereQq = 22 : Public, Static, Literal, HasDefault
+    Int32 HereQx = 23 : Public, Static, Literal, HasDefault
+    Int32 StringQ = 24 : Public, Static, Literal, HasDefault
+    Int32 StringQq = 25 : Public, Static, Literal, HasDefault
+    Int32 StringQx = 26 : Public, Static, Literal, HasDefault
+    Int32 StringQr = 27 : Public, Static, Literal, HasDefault
+    Int32 StringQw = 28 : Public, Static, Literal, HasDefault
+    Int32 WordDemoted = 29 : Public, Static, Literal, HasDefault
+    Int32 StdIn = 30 : Public, Static, Literal, HasDefault
+    Int32 StdOut = 31 : Public, Static, Literal, HasDefault
+    Int32 StdErr = 40 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Smalltalk: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 String = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 Comment = 3 : Public, Static, Literal, HasDefault
+    Int32 Symbol = 4 : Public, Static, Literal, HasDefault
+    Int32 Binary = 5 : Public, Static, Literal, HasDefault
+    Int32 Bool = 6 : Public, Static, Literal, HasDefault
+    Int32 Self = 7 : Public, Static, Literal, HasDefault
+    Int32 Super = 8 : Public, Static, Literal, HasDefault
+    Int32 Nil = 9 : Public, Static, Literal, HasDefault
+    Int32 Global = 10 : Public, Static, Literal, HasDefault
+    Int32 Return = 11 : Public, Static, Literal, HasDefault
+    Int32 Special = 12 : Public, Static, Literal, HasDefault
+    Int32 KwsEnd = 13 : Public, Static, Literal, HasDefault
+    Int32 Assign = 14 : Public, Static, Literal, HasDefault
+    Int32 Character = 15 : Public, Static, Literal, HasDefault
+    Int32 SpecSel = 16 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Sql: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 2 : Public, Static, Literal, HasDefault
+    Int32 CommentDoc = 3 : Public, Static, Literal, HasDefault
+    Int32 Number = 4 : Public, Static, Literal, HasDefault
+    Int32 Word = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 Character = 7 : Public, Static, Literal, HasDefault
+    Int32 SqlPlus = 8 : Public, Static, Literal, HasDefault
+    Int32 SqlPlusPrompt = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 11 : Public, Static, Literal, HasDefault
+    Int32 SqlPlusComment = 13 : Public, Static, Literal, HasDefault
+    Int32 CommentLineDoc = 15 : Public, Static, Literal, HasDefault
+    Int32 Word2 = 16 : Public, Static, Literal, HasDefault
+    Int32 CommentDocKeyword = 17 : Public, Static, Literal, HasDefault
+    Int32 CommentDocKeywordError = 18 : Public, Static, Literal, HasDefault
+    Int32 User1 = 19 : Public, Static, Literal, HasDefault
+    Int32 User2 = 20 : Public, Static, Literal, HasDefault
+    Int32 User3 = 21 : Public, Static, Literal, HasDefault
+    Int32 User4 = 22 : Public, Static, Literal, HasDefault
+    Int32 QuotedIdentifier = 23 : Public, Static, Literal, HasDefault
+    Int32 QOperator = 24 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Markdown: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 LineBegin = 1 : Public, Static, Literal, HasDefault
+    Int32 Strong1 = 2 : Public, Static, Literal, HasDefault
+    Int32 Strong2 = 3 : Public, Static, Literal, HasDefault
+    Int32 Em1 = 4 : Public, Static, Literal, HasDefault
+    Int32 Em2 = 5 : Public, Static, Literal, HasDefault
+    Int32 Header1 = 6 : Public, Static, Literal, HasDefault
+    Int32 Header2 = 7 : Public, Static, Literal, HasDefault
+    Int32 Header3 = 8 : Public, Static, Literal, HasDefault
+    Int32 Header4 = 9 : Public, Static, Literal, HasDefault
+    Int32 Header5 = 10 : Public, Static, Literal, HasDefault
+    Int32 Header6 = 11 : Public, Static, Literal, HasDefault
+    Int32 PreChar = 12 : Public, Static, Literal, HasDefault
+    Int32 UListItem = 13 : Public, Static, Literal, HasDefault
+    Int32 OListItem = 14 : Public, Static, Literal, HasDefault
+    Int32 BlockQuote = 15 : Public, Static, Literal, HasDefault
+    Int32 Strikeout = 16 : Public, Static, Literal, HasDefault
+    Int32 HRule = 17 : Public, Static, Literal, HasDefault
+    Int32 Link = 18 : Public, Static, Literal, HasDefault
+    Int32 Code = 19 : Public, Static, Literal, HasDefault
+    Int32 Code2 = 20 : Public, Static, Literal, HasDefault
+    Int32 CodeBk = 21 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+R: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 KWord = 2 : Public, Static, Literal, HasDefault
+    Int32 BaseKWord = 3 : Public, Static, Literal, HasDefault
+    Int32 OtherKWord = 4 : Public, Static, Literal, HasDefault
+    Int32 Number = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 String2 = 7 : Public, Static, Literal, HasDefault
+    Int32 Operator = 8 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 9 : Public, Static, Literal, HasDefault
+    Int32 Infix = 10 : Public, Static, Literal, HasDefault
+    Int32 InfixEol = 11 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Vb: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 3 : Public, Static, Literal, HasDefault
+    Int32 String = 4 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 5 : Public, Static, Literal, HasDefault
+    Int32 Operator = 6 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Date = 8 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 9 : Public, Static, Literal, HasDefault
+    Int32 Keyword2 = 10 : Public, Static, Literal, HasDefault
+    Int32 Keyword3 = 11 : Public, Static, Literal, HasDefault
+    Int32 Keyword4 = 12 : Public, Static, Literal, HasDefault
+    Int32 Constant = 13 : Public, Static, Literal, HasDefault
+    Int32 Asm = 14 : Public, Static, Literal, HasDefault
+    Int32 Label = 15 : Public, Static, Literal, HasDefault
+    Int32 Error = 16 : Public, Static, Literal, HasDefault
+    Int32 HexNumber = 17 : Public, Static, Literal, HasDefault
+    Int32 BinNumber = 18 : Public, Static, Literal, HasDefault
+    Int32 CommentBlock = 19 : Public, Static, Literal, HasDefault
+    Int32 DocLine = 20 : Public, Static, Literal, HasDefault
+    Int32 DocBlock = 21 : Public, Static, Literal, HasDefault
+    Int32 DocKeyword = 22 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+VbScript: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 Number = 2 : Public, Static, Literal, HasDefault
+    Int32 Keyword = 3 : Public, Static, Literal, HasDefault
+    Int32 String = 4 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 5 : Public, Static, Literal, HasDefault
+    Int32 Operator = 6 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 7 : Public, Static, Literal, HasDefault
+    Int32 Date = 8 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 9 : Public, Static, Literal, HasDefault
+    Int32 Keyword2 = 10 : Public, Static, Literal, HasDefault
+    Int32 Keyword3 = 11 : Public, Static, Literal, HasDefault
+    Int32 Keyword4 = 12 : Public, Static, Literal, HasDefault
+    Int32 Constant = 13 : Public, Static, Literal, HasDefault
+    Int32 Asm = 14 : Public, Static, Literal, HasDefault
+    Int32 Label = 15 : Public, Static, Literal, HasDefault
+    Int32 Error = 16 : Public, Static, Literal, HasDefault
+    Int32 HexNumber = 17 : Public, Static, Literal, HasDefault
+    Int32 BinNumber = 18 : Public, Static, Literal, HasDefault
+    Int32 CommentBlock = 19 : Public, Static, Literal, HasDefault
+    Int32 DocLine = 20 : Public, Static, Literal, HasDefault
+    Int32 DocBlock = 21 : Public, Static, Literal, HasDefault
+    Int32 DocKeyword = 22 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Verilog: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Comment = 1 : Public, Static, Literal, HasDefault
+    Int32 CommentLine = 2 : Public, Static, Literal, HasDefault
+    Int32 CommentLineBang = 3 : Public, Static, Literal, HasDefault
+    Int32 Number = 4 : Public, Static, Literal, HasDefault
+    Int32 Word = 5 : Public, Static, Literal, HasDefault
+    Int32 String = 6 : Public, Static, Literal, HasDefault
+    Int32 Word2 = 7 : Public, Static, Literal, HasDefault
+    Int32 Word3 = 8 : Public, Static, Literal, HasDefault
+    Int32 Preprocessor = 9 : Public, Static, Literal, HasDefault
+    Int32 Operator = 10 : Public, Static, Literal, HasDefault
+    Int32 Identifier = 11 : Public, Static, Literal, HasDefault
+    Int32 StringEol = 12 : Public, Static, Literal, HasDefault
+    Int32 User = 19 : Public, Static, Literal, HasDefault
+    Int32 CommentWord = 20 : Public, Static, Literal, HasDefault
+    Int32 Input = 21 : Public, Static, Literal, HasDefault
+    Int32 Output = 22 : Public, Static, Literal, HasDefault
+    Int32 InOut = 23 : Public, Static, Literal, HasDefault
+    Int32 PortConnect = 24 : Public, Static, Literal, HasDefault
+Class ScintillaNET.Style+Xml: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 Default = 0 : Public, Static, Literal, HasDefault
+    Int32 Tag = 1 : Public, Static, Literal, HasDefault
+    Int32 TagUnknown = 2 : Public, Static, Literal, HasDefault
+    Int32 Attribute = 3 : Public, Static, Literal, HasDefault
+    Int32 AttributeUnknown = 4 : Public, Static, Literal, HasDefault
+    Int32 Number = 5 : Public, Static, Literal, HasDefault
+    Int32 DoubleString = 6 : Public, Static, Literal, HasDefault
+    Int32 SingleString = 7 : Public, Static, Literal, HasDefault
+    Int32 Other = 8 : Public, Static, Literal, HasDefault
+    Int32 Comment = 9 : Public, Static, Literal, HasDefault
+    Int32 Entity = 10 : Public, Static, Literal, HasDefault
+    Int32 TagEnd = 11 : Public, Static, Literal, HasDefault
+    Int32 XmlStart = 12 : Public, Static, Literal, HasDefault
+    Int32 XmlEnd = 13 : Public, Static, Literal, HasDefault
+    Int32 Script = 14 : Public, Static, Literal, HasDefault
+    Int32 Asp = 15 : Public, Static, Literal, HasDefault
+    Int32 AspAt = 16 : Public, Static, Literal, HasDefault
+    Int32 CData = 17 : Public, Static, Literal, HasDefault
+    Int32 Question = 18 : Public, Static, Literal, HasDefault
+    Int32 Value = 19 : Public, Static, Literal, HasDefault
+    Int32 XcComment = 20 : Public, Static, Literal, HasDefault

@@ -1,0 +1,232 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly SkinH_CS, Version=1.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class SkinSharp.SkinH_Net: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 TYPE_UNKNOWN = 0 : Public, Static, Literal, HasDefault
+    Int32 TYPE_ANIMATE = 1001 : Public, Static, Literal, HasDefault
+    Int32 TYPE_CHECKBOX = 1002 : Public, Static, Literal, HasDefault
+    Int32 TYPE_COMBOBOX = 1003 : Public, Static, Literal, HasDefault
+    Int32 TYPE_COMBOLBOX = 1004 : Public, Static, Literal, HasDefault
+    Int32 TYPE_CONTROLBAR = 1005 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DATETIME = 1006 : Public, Static, Literal, HasDefault
+    Int32 TYPE_EDITBOX = 1007 : Public, Static, Literal, HasDefault
+    Int32 TYPE_GROUPBOX = 1008 : Public, Static, Literal, HasDefault
+    Int32 TYPE_HEADERCTRL = 1009 : Public, Static, Literal, HasDefault
+    Int32 TYPE_HOTKEY = 1010 : Public, Static, Literal, HasDefault
+    Int32 TYPE_IPADDRESS = 1011 : Public, Static, Literal, HasDefault
+    Int32 TYPE_LABEL = 1012 : Public, Static, Literal, HasDefault
+    Int32 TYPE_LISTBOX = 1013 : Public, Static, Literal, HasDefault
+    Int32 TYPE_LISTVIEW = 1014 : Public, Static, Literal, HasDefault
+    Int32 TYPE_MDICLIENT = 1015 : Public, Static, Literal, HasDefault
+    Int32 TYPE_MENU = 1016 : Public, Static, Literal, HasDefault
+    Int32 TYPE_MONTHCAL = 1017 : Public, Static, Literal, HasDefault
+    Int32 TYPE_PICTURE = 1018 : Public, Static, Literal, HasDefault
+    Int32 TYPE_PROGRESS = 1019 : Public, Static, Literal, HasDefault
+    Int32 TYPE_PUSHBUTTON = 1020 : Public, Static, Literal, HasDefault
+    Int32 TYPE_RADIOBUTTON = 1021 : Public, Static, Literal, HasDefault
+    Int32 TYPE_REBAR = 1022 : Public, Static, Literal, HasDefault
+    Int32 TYPE_RICHEDIT = 1023 : Public, Static, Literal, HasDefault
+    Int32 TYPE_SCROLLBAR = 1024 : Public, Static, Literal, HasDefault
+    Int32 TYPE_SCROLLCTRL = 1025 : Public, Static, Literal, HasDefault
+    Int32 TYPE_SPINCTRL = 1026 : Public, Static, Literal, HasDefault
+    Int32 TYPE_STATUSBAR = 1027 : Public, Static, Literal, HasDefault
+    Int32 TYPE_TABCTRL = 1028 : Public, Static, Literal, HasDefault
+    Int32 TYPE_TOOLBAR = 1029 : Public, Static, Literal, HasDefault
+    Int32 TYPE_TOOLBARWND = 1030 : Public, Static, Literal, HasDefault
+    Int32 TYPE_TRACKBAR = 1031 : Public, Static, Literal, HasDefault
+    Int32 TYPE_TREEVIEW = 1032 : Public, Static, Literal, HasDefault
+    Int32 TYPE_VISTABAND = 1033 : Public, Static, Literal, HasDefault
+    Int32 TYPE_WINDOW = 1034 : Public, Static, Literal, HasDefault
+    Int32 TYPE_LATEHOOKAFX = 1035 : Public, Static, Literal, HasDefault
+    Int32 TYPE_COMCTRL = 1036 : Public, Static, Literal, HasDefault
+    Int32 TYPE_PAINTCTRL = 1037 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_LABEL = 2001 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_WINDOW = 2002 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_CHECKBOX = 2003 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_RADIOBUTTON = 2004 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_PUSHBUTTON = 2005 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_TOOLSTRIP = 2006 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_MENUSTRIP = 2007 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_STATUSSTRIP = 2008 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_TOOLSTRIPMENU = 2009 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_TOOLSTRIPOVERFLOW = 2010 : Public, Static, Literal, HasDefault
+    Int32 TYPE_DNET_DATAGRIDVIEW = 2011 : Public, Static, Literal, HasDefault
+    Int32 WM_CREATE = 1 : Public, Static, Literal, HasDefault
+    Int32 WM_SKINATTACH = 27184 : Public, Static, Literal, HasDefault
+    Int32 WM_DNETATTACH = 27440 : Public, Static, Literal, HasDefault
+    Int32 WM_BUTTON_GETSTATE = 37121 : Public, Static, Literal, HasDefault
+    Int32 WM_BUTTON_GETSTYLE = 37122 : Public, Static, Literal, HasDefault
+    Int32 WM_TOOLSTRIP_GETSIZE = 37123 : Public, Static, Literal, HasDefault
+    Int32 WM_TOOLSTRIP_GETITEM = 37124 : Public, Static, Literal, HasDefault
+    Int32 WM_TOOLSTRIP_GETSTYLE = 37125 : Public, Static, Literal, HasDefault
+    Int32 WM_TOOLSTRIPOVERFLOW_GETSIZE = 37126 : Public, Static, Literal, HasDefault
+    Int32 WM_TOOLSTRIPOVERFLOW_GETITEM = 37127 : Public, Static, Literal, HasDefault
+    Int32 WM_LABEL_SETINFO = 37128 : Public, Static, Literal, HasDefault
+    Int32 WM_LABEL_GETINFO = 37129 : Public, Static, Literal, HasDefault
+    Int32 WM_DATAGRID_SETINFO = 37136 : Public, Static, Literal, HasDefault
+    Int32 WM_DATAGRID_GETINFO = 37137 : Public, Static, Literal, HasDefault
+  Methods:
+    SetMenuAlpha(Int32): PrivateScope, Public, HideBySig
+    AdjustHSV(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Map(IntPtr, Int32): PrivateScope, Public, HideBySig
+    SetBackColor(IntPtr, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    SetForeColor(IntPtr, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    NineBlt(IntPtr, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    SetWindowMovable(IntPtr, Int32): PrivateScope, Public, HideBySig
+    GetColor(IntPtr, Int32, Int32): PrivateScope, Public, HideBySig
+    SetWindowAlpha(IntPtr, Int32): PrivateScope, Public, HideBySig
+    LockUpdate(IntPtr, Int32): PrivateScope, Public, HideBySig
+    SetFont(IntPtr, IntPtr): PrivateScope, Public, HideBySig
+    SetFontEx(IntPtr, String, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Attach(): PrivateScope, Public, HideBySig
+    AttachEx(String, String): PrivateScope, Public, HideBySig
+    AttachExt(String, String, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    AttachRes(Byte[], UInt32, String, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Detach(): PrivateScope, Public, HideBySig
+    DetachEx(IntPtr): PrivateScope, Public, HideBySig
+    SetAero(Int32): PrivateScope, Public, HideBySig
+    AdjustAero(Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+Struct SkinSharp.SkinH_Net+DNetStripItemType: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    DNetStripItemType STRIPITEM_LABEL = 1 : Public, Static, Literal, HasDefault
+    DNetStripItemType STRIPITEM_BUTTON = 2 : Public, Static, Literal, HasDefault
+    DNetStripItemType STRIPITEM_SPLITBTN = 3 : Public, Static, Literal, HasDefault
+    DNetStripItemType STRIPITEM_DROPDOWNBTN = 4 : Public, Static, Literal, HasDefault
+    DNetStripItemType STRIPITEM_SEPARATOR = 5 : Public, Static, Literal, HasDefault
+    DNetStripItemType STRIPITEM_COMBOBOX = 6 : Public, Static, Literal, HasDefault
+    DNetStripItemType STRIPITEM_PROGRESSBAR = 7 : Public, Static, Literal, HasDefault
+    DNetStripItemType STRIPITEM_TEXTBOX = 8 : Public, Static, Literal, HasDefault
+Struct SkinSharp.SkinH_Net+SKINHMSG: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr lParam : Public
+    IntPtr wParam : Public
+    Int32 uMsg : Public
+    IntPtr hWnd : Public
+Struct SkinSharp.SkinH_Net+DNETIMAGE: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr hImageBmp : Public
+    Int32 nImageAlign : Public
+    Int32 nImageScale : Public
+    Int32 crImageTrans : Public
+    IntPtr hImageList : Public
+    Int32 nImageIndex : Public
+Struct SkinSharp.SkinH_Net+DNETBKGND: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    IntPtr hBkGndBmp : Public
+    Int32 hBkGndLayout : Public
+Struct SkinSharp.SkinH_Net+DNETTEXT: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 nTextAlign : Public
+    Int32 nTextDirection : Public
+    Int32 nTextImageRelation : Public
+    IntPtr hFont : Public
+Struct SkinSharp.SkinH_Net+DNETCOLOR: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 crBack : Public
+    Int32 crFore : Public
+Struct SkinSharp.SkinH_Net+DNETRECT: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 Left : Public
+    Int32 Top : Public
+    Int32 Right : Public
+    Int32 Bottom : Public
+Struct SkinSharp.SkinH_Net+DNETSIZE: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 Width : Public
+    Int32 Height : Public
+Struct SkinSharp.SkinH_Net+DNETREGION: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DNETRECT rcPad : Public
+    DNETRECT rcReg : Public
+Struct SkinSharp.SkinH_Net+LABELINFO: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DNETCOLOR color : Public
+Struct SkinSharp.SkinH_Net+DNETDATAGRIDINFO: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 crRowHeader : Public
+    Int32 crColumnHeader : Public
+Struct SkinSharp.SkinH_Net+GRIPITEM: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 nGripStyle : Public
+    Int32 nGripDisplayStyle : Public
+    DNETRECT rcMargin : Public
+    DNETRECT rcRegion : Public
+Struct SkinSharp.SkinH_Net+OVERFLOW: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 bExist : Public
+    Int32 bPressed : Public
+    Int32 bSelected : Public
+    DNETRECT rcPad : Public
+    DNETRECT rcReg : Public
+Struct SkinSharp.SkinH_Net+STRIPSTYLE: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 nLayoutStyle : Public
+    GRIPITEM grip : Public
+    DNETBKGND bkgnd : Public
+    OVERFLOW overflow : Public
+    DNETSIZE ImageScalingSize : Public
+Struct SkinSharp.SkinH_Net+BUTTONSTYLE: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 CheckAlign : Public
+    Int32 Appearance : Public
+    DNETTEXT text : Public
+    DNETCOLOR color : Public
+    DNETIMAGE image : Public
+    DNETBKGND bkgnd : Public
+Struct SkinSharp.SkinH_Net+DNETSPLITBUTTON: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    DNETRECT rcButton : Public
+    DNETRECT rcSplitter : Public
+    DNETRECT rcDropDownButton : Public
+    Int32 nButtonPressed : Public
+    Int32 nButtonSelected : Public
+    Int32 nDropDownButtonPressed : Public
+    Int32 nDropDownButtonSelected : Public
+Struct SkinSharp.SkinH_Net+STRIPITEM: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 nDisplayStyle : Public
+    Int32 nPressed : Public
+    Int32 nSelected : Public
+    Int32 nCheckState : Public
+    Int32 nEnabled : Public
+    Int32 bHasSubItem : Public
+    Int32 bOverflow : Public
+    Int32 bVisible : Public
+    DNetStripItemType ItemType : Public
+    DNETTEXT text : Public
+    DNETCOLOR color : Public
+    DNETIMAGE image : Public
+    DNETBKGND bkgnd : Public
+    DNETREGION region : Public
+    DNETSPLITBUTTON splitbtn : Public
+    <szText>e__FixedBuffer0 szText : Public
+Struct SkinSharp.SkinH_Net+STRIPITEM+<szText>e__FixedBuffer0: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Char FixedElementField : Public
